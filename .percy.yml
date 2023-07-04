@@ -1,0 +1,18 @@
+version: 2
+percy:
+  defer-uploads: false
+snapshot:
+  widths:
+    - 1280
+  minHeight: 1024
+  percyCSS: ""
+discovery:
+  launch-options:
+    headless: false
+  allowedHostnames: []
+  disallowedHostnames: []
+  networkIdleTimeout: 100
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
+  stripExtensions: false
