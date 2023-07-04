@@ -16,6 +16,8 @@ Primary.play = async ({ canvasElement }) => {
   const button = await canvas.getByText('Check Button');
 
   userEvent.click(button);
+
+  button.classList.add('percy-selector-placeholder');
 }
 
 Primary.args = {
@@ -24,5 +26,6 @@ Primary.args = {
 
 Primary.parameters = {
   percy: {
+    waitForSelector: '.percy-selector-placeholder'
   },
 }
